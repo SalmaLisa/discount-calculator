@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Price discount</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div class="border-4 border-lime-300 bg-lime-100 w-10/12 md:w-1/2 mx-auto p-8 mt-12">
+    <h1 class="text-3xl text-lime-700 font-semibold">Calculate 30% discount</h1>
+    <input id="price-input" class="block my-5 py-2 px-4 border border-slate-300 rounded-md w-10/12 outline-0" type="number" placeholder="Enter your Price">
+    <input id="robot-check" class="block my-5 py-2 px-4 border border-slate-300 rounded-md w-10/12 outline-0" type="text" placeholder="Type DOM">
+    <button id="apply-btn" class="px-6 py-2 rounded-md bg-lime-600 text-white font-semibold mb-5" disabled>Apply</button>
+
+    <p class="text-lime-700 font-semibold mb-2">Price after discount :</p>
+    <div id="discount-price" class="bg-white mb-5 py-2 px-4 border border-slate-300 rounded-md w-10/12" placeholder="">
+      <p class="text-slate-500">Discount Price</p>
+    </div>
+  </div>
+  <script src="js/discount.js"></script>
+</body>
+</html>
