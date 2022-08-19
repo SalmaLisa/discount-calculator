@@ -9,12 +9,20 @@
 </head>
 <body>
   <div class="border-4 border-lime-300 bg-lime-100 w-10/12 md:w-1/2 mx-auto p-8 mt-12">
-    <h1 class="text-3xl text-lime-700 font-semibold">Calculate 30% discount</h1>
-    <input id="price-input" class="block my-5 py-2 px-4 border border-slate-300 rounded-md w-10/12 outline-0" type="number" placeholder="Enter your Price">
-    <input id="robot-check" class="block my-5 py-2 px-4 border border-slate-300 rounded-md w-10/12 outline-0" type="text" placeholder="Type DOM">
-    <button id="apply-btn" class="px-6 py-2 rounded-md bg-lime-600 text-white font-semibold mb-5" disabled>Apply</button>
+    <h1 class="text-3xl text-lime-700 font-semibold mb-5">Discount Calculator</h1>
+    
+    <p class="text-lime-600 font-semibold mb-1 ml-1">Enter Price :</p>
+    <input id="price-input" class="block mb-5 py-2 px-4 border border-slate-300 rounded-md w-10/12 outline-0" type="number" placeholder="Enter your Price">
 
-    <p class="text-lime-700 font-semibold mb-2">Price after discount :</p>
+    <p class="text-lime-600 font-semibold mb-1 ml-1">Eenter percentage number :</p>
+    <input id="discount-percentage" class="block mb-5 py-2 px-4 border border-slate-300 rounded-md w-10/12 outline-0" type="number" placeholder="Enter Discount Percentage">
+
+    <p class="text-lime-600 font-semibold mb-1 ml-1">Prove you are not a robot :</p>
+    <input id="robot-check" class="block mb-5 py-2 px-4 border border-slate-300 rounded-md w-10/12 outline-0" type="text" placeholder="Type DOM">
+
+    <button id="apply-btn" class="px-6 py-2 rounded-md bg-lime-300 text-white font-semibold mb-5" disabled>Apply</button>
+
+    <p class="text-red-500 font-semibold mb-1 ml-1">Price after discount :</p>
     <div id="discount-price" class="bg-white mb-5 py-2 px-4 border border-slate-300 rounded-md w-10/12" placeholder="">
       <p class="text-slate-500">Discount Price</p>
     </div>
