@@ -35,7 +35,7 @@ getElement("apply-btn").addEventListener("click", function () {
   const discount = price * (percentage / 100);
   const discountPrice = Math.round(price - discount);
   const discountPriceField = getElement("discount-price");
-  discountPriceField.innerText = discountPrice;
+  discountPriceField.innerText = discountPrice + ' TK';
   discountPriceField.style.color = 'rgb(101 163 13)';
   const domField = getElement("robot-check");
   domField.value = "";
